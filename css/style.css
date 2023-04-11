@@ -8,7 +8,7 @@ a {
   text-decoration: none;
 }
 /* sectionOne  */
-.sectionOne {
+.homePage {
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.807),
       rgba(255, 255, 255, 0.807)
@@ -17,15 +17,9 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* position: relative; */
   padding-bottom: 100px;
-  /* height: 100vh; */
   overflow-x: hidden;
 }
-/* .ddd{
-    position: absolute;
-} */
-
 .bg {
   width: 100%;
   background-color: hsl(45, 99%, 50%);
@@ -36,16 +30,18 @@ a {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 100px;
-  /* background-color: none; */
-  margin-bottom: 100px;
+  justify-content: center;
+  width: 90%;
+  margin: 20px auto 100px auto;
+}
+.logo {
+  width: 25%;
 }
 .navlinks {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 70px;
+  width: 75%;
 }
 .navbar a:hover {
   color: hsl(45, 99%, 50%);
@@ -64,21 +60,20 @@ i {
   color: hsl(0, 0%, 21%);
   cursor: pointer;
 }
-.sectionOne .item {
+.homePage .item {
   display: flex;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 30px;
 }
-.sectionOne .item1 {
+.homePage .item1 {
   display: flex;
   flex-direction: column;
-  padding-left: 100px;
   gap: 50px;
-  width: 43%;
+  width: 40%;
 }
-.sectionOne .item1 h1 {
+.homePage .item1 h1 {
   font-size: 7vw;
 }
 .btn {
@@ -101,27 +96,24 @@ i {
   background-color: hsl(45, 99%, 50%);
   transition: 0.4s ease-in-out;
 }
-.sectionOne .item2 {
+.homePage .item2 {
   display: flex;
   gap: 30px;
-  width: 50%;
+  width: 60%;
 }
 
-.sectionOne .item2 img {
+.homePage .item2 img {
   width: 50%;
 }
-/* sectionTwo */
-.sectionTwo {
+/* contactUsPage */
+.contactUsPage {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 100px;
   background-color: hsl(45, 99%, 50%);
-  margin: auto;
-  width: 100%;
-  /* height: 100vh; */
+  padding: 70px 0;
 }
-.sectionTwo h1 {
+.contactUsPage h1 {
   font-size: 3.5vw;
   padding-bottom: 10px;
 }
@@ -132,15 +124,14 @@ i {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin: 50px 0;
-  /* width: 100%; */
+  width: 90%;
+  margin: 50px auto;
   gap: 20px;
 }
 .form {
   display: flex;
   width: 100%;
   gap: 20px;
-  /* background-color: rgb(0, 255, 68); */
 }
 .inputItem {
   width: 100%;
@@ -168,31 +159,31 @@ i {
   align-items: center;
   justify-content: center;
 }
-.button2:hover {
+.button2:hover,
+.button5:hover {
   background-color: hsl(45, 99%, 50%);
   transition: 0.6s ease-in-out;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/* sectionThree*/
-.sectionThree {
+/* servicesPage*/
+.servicesPage {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 110px 100px;
   background-color: #fff;
-  margin: auto;
+  padding: 70px 0;
   width: 100%;
-  /* height: 100vh; */
   gap: 30px;
 }
-.sectionThree h1 {
+.servicesPage h1 {
   font-size: 3.5vw;
   padding-bottom: 10px;
 }
 .services {
   display: flex;
   align-items: center;
-  /* flex-direction: column; */
+  width: 90%;
+  margin: 0 auto;
   gap: 30px;
 }
 
@@ -202,11 +193,8 @@ i {
   flex-direction: column;
   gap: 30px;
 }
-/* .service:hover{
-
-} */
-
-.button3 {
+.button3,
+.button5 {
   border-radius: 100px;
   border: none;
   background-color: hsl(0, 0%, 21%);
@@ -230,30 +218,26 @@ i {
 .service img {
   width: 100%;
 }
-/* sectionFour*/
-.sectionFour {
+/* ourPricingPage*/
+.ourPricingPage {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 100px 100px;
   background-color: hsl(0, 0%, 18%);
-  margin: 0 auto;
-  width: 100%;
-  /* height: 100vh; */
+  padding: 70px 0;
   gap: 20px;
 }
-.sectionFour h1 {
+.ourPricingPage h1 {
   font-size: 4vw;
   color: #fff;
 }
-.sectionFour p {
+.ourPricingPage p {
   color: #fff;
 }
 .contain {
   display: flex;
-  /* background-color: #fff; */
-  width: 100%;
-  /* height: 100vh; */
+  width: 90%;
+  margin: 0 auto;
   gap: 30px;
   align-items: center;
   justify-content: center;
@@ -263,7 +247,6 @@ i {
   background-color: #fff;
   width: 40%;
   flex-direction: column;
-  /* height: 50vh; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -282,23 +265,21 @@ i {
   padding: 20px;
   gap: 30px;
 }
-.sectionFour .button3 {
+.ourPricingPage .button3 {
   position: relative;
   top: 30px;
 }
-/* sectionFive*/
-.sectionFive {
+/* blogPage*/
+.blogPage {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 110px 100px;
+  padding: 70px 0;
   background-color: #fff;
-  margin: auto;
   width: 100%;
-  /* height: 100vh; */
   gap: 30px;
 }
-.sectionFive h1 {
+.blogPage h1 {
   font-size: 3.5vw;
   padding-bottom: 10px;
 }
@@ -306,7 +287,8 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-direction: column; */
+  width: 90%;
+  margin: 0 auto;
   gap: 30px;
 }
 
@@ -315,7 +297,6 @@ i {
   align-items: flex-start;
   flex-direction: column;
   gap: 30px;
-
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -344,52 +325,220 @@ i {
   font-weight: lighter;
   bottom: 0;
 }
-.sectionFive .button3 {
+.blogPage .button3 {
   margin: 0 auto;
   width: 70%;
   position: relative;
   top: 50px;
 }
+.blogPage .button3:hover,
+.ourPricingPage .button3:hover {
+  background-color: hsl(45, 99%, 50%);
+  transition: 0.6s ease-in-out;
+}
 /* aboutUs */
 
-.aboutUs {
+.aboutUsPage {
+  padding: 150px 0;
+  background-color: hsl(45, 99%, 50%);
+}
+.ite_m {
   display: flex;
   align-items: center;
-  /* flex-direction: column; */
-  padding: 100px 0;
-  background-color: hsl(45, 99%, 50%);
-   /* margin: auto; */
-  width: 100%;
-  /* height: 100vh; */
-  gap: 30px;
+  width: 95%;
+  gap: 70px;
 }
-.aboutUs .item1{
-display: flex;
-align-items: center;
-width: 50%;
-/* height: 100vh; */
-  /* background-color: #fff; */
+.aboutUsPage .item1 {
+  display: flex;
+  align-items: center;
+  width: 50%;
   justify-content: space-between;
 }
- .item1 .whiteItem{
-  width: 350px;
-  height: 500px;
+.whiteItem {
+  width: 30%;
+  height: 60%;
   background-color: #fff;
-  position: relative;
-}
-.item1 img{
-  /* height: px; */
   position: absolute;
-  left: 20px;
-  /* z-index: 1; */
-
 }
-.aboutUs .item2{
+.item1 img {
+  position: relative;
+  left: 20px;
+  width: 100%;
+}
+.aboutUsPage .item2 {
   display: flex;
   align-items: flex-start;
   width: 50%;
   flex-direction: column;
-  /* height: 100vh; */
-    /* background-color: #fff; */
-    justify-content: center;
-  }
+  justify-content: center;
+  gap: 30px;
+}
+.aboutUsPage h1,
+.customerPage h1 {
+  font-size: 3.5vw;
+}
+.button5 {
+  width: 40%;
+}
+/* customerPage */
+.customerPage {
+  display: flex;
+  align-items: center;
+  padding: 120px 0;
+  background-color: white;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.iteM {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  gap: 30px;
+  margin: 0 auto;
+}
+.itemOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.itemOne p {
+  color: hsl(45, 99%, 50%);
+}
+.itemTwo {
+  border: 1px solid hsl(0, 0%, 18%);
+  border-radius: 10px;
+  padding: 0 30px;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* footerLinks */
+.footerLinks {
+  background-color: hsl(0, 0%, 18%);
+  color: #fff;
+  padding: 100px 0;
+}
+.footerLinkItems {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  gap: 30px;
+}
+.footerLinkItem {
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  width: 25%;
+  flex-direction: column;
+}
+.link a {
+  color: hsl(60, 4%, 58%);
+}
+.footLinkItem a:hover {
+  color: hsl(45, 99%, 50%);
+  transition: 0.3s ease-in-out;
+}
+.circledText {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.ellipse {
+  width: 20px;
+  height: 20px;
+  background-color: hsl(45, 99%, 50%);
+  border: none;
+  border-radius: 100%;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.letter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#email {
+  width: 80%;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 15px;
+  color: #fff;
+}
+.subscribe a {
+  color: white;
+}
+
+.subscribe {
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: hsl(45, 99%, 50%);
+  color: white;
+  font-weight: bold;
+  width: 70%;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe:hover {
+  background-color: white;
+  transition: 0.6s ease-in-out;
+}
+.letter i,
+footer h2 {
+  color: hsl(45, 99%, 50%);
+}
+.letter i p {
+  color: white;
+}
+.i {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.i p,
+a {
+  color: hsl(60, 4%, 58%);
+}
+/* footer */
+footer {
+  background-color: #fff;
+  padding: 100px 0;
+}
+.footerComponent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
+.icons .ellipse {
+  background-color: hsl(0, 0%, 18%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+.icons .ellipse:hover {
+  background-color: hsl(45, 99%, 50%);
+  transition: 0.6s ease-in-out;
+}
+.icons .ellipse i {
+  color: white;
+}
