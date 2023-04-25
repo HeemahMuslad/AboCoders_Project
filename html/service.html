@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AboCoders Project</title>
     <link rel="stylesheet" href="/css/all.min.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="/css/pages.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,25 +23,32 @@
     <!-- sectionOne -->
     <section class="homePage">
       <div class="bg"></div>
+      <div class="bg2"></div>
       <div class="nav">
         <div class="navbar">
           <div class="logo">
             <h1>Bliss</h1>
           </div>
           <div class="navlinks">
-            <a href="/html/home.html">HOME</a>
-            <a href="/html/about.html">ABOUT</a>
-            <a href="/html/service.html">SERVICE</a>
-            <a href="/html/blog.html">BLOG</a>
-            <a href="/html/contact.html">CONTACT US</a>
+            <a href="/html/home.html" class="link" >HOME</a>
+            <a href="/html/about.html" class="link">ABOUT</a>
+            <a href="/html/service.html" class="link" id="active">SERVICE</a>
+            <a href="/html/blog.html" class="link">BLOG</a>
+            <a href="/html/contact.html" class="link">CONTACT US</a>
+          </div>
+          <div class="solid">
             <i class="fa-solid fa-user-large"></i>
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
       </div>
-      
     </section>
-    
+
     <!-- servicesPage -->
     <section class="servicesPage">
       <h1>Our Massage Services</h1>
@@ -78,7 +86,6 @@
       </div>
     </section>
 
-    
     <!-- footerLinks -->
     <section class="footerLinks">
       <div class="footerLinkItems">
