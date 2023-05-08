@@ -17,22 +17,22 @@ a {
   height: 120px;
   margin: 0 auto;
   background-image: linear-gradient(
-    rgba(255, 255, 255, 0.926),
-    rgba(255, 255, 255, 0.926)
-    ),
+    rgba(255, 255, 255, 0.672),
+    rgba(255, 255, 255, 0.672)    ),
     url(../images/img1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow-x: hidden;
+  
 }
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 90%;
-  margin: 20px auto 100px auto;
-  position: relative;
-  bottom: 100px;
+  margin: 0 auto 100px auto;
+
 }
 
 .logo {
@@ -98,134 +98,7 @@ i {
   align-items: center;
   gap: 30px;
 }
-.homePage .item1 {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  width: 40%;
-}
-.homePage .item1 h1 {
-  font-size: 7vw;
-}
-.btn {
-  display: flex;
-  gap: 20px;
-}
-.button {
-  border-radius: 100px;
-  border: none;
-  background-color: hsl(0, 0%, 21%);
-  color: white;
-  font-weight: bold;
-  width: 100%;
-  display: flex;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-}
-.button:hover {
-  background-color: hsl(45, 99%, 50%);
-  transition: 0.4s ease-in-out;
-}
-.homePage .item2 {
-  display: flex;
-  gap: 30px;
-  width: 60%;
-}
 
-.homePage .item2 img {
-  width: 50%;
-}
-/* .logo {
-  width: 25%;
-}
-.navlinks {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 75%;
-}
-.hamburger {
-  display: none;
-  cursor: pointer;
-  border: 3px solid black;
-  padding: 3px;
-}
-.bar {
-  display: block;
-  background-color: black;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.3s ease-in-out;
-}
-.navbar .link,
-i {
-  color: hsl(0, 0%, 21%);
-  cursor: pointer;
-}
-.navbar .link:hover {
-  color: hsl(45, 99%, 50%);
-  transition: 0.4s ease-in-out;
-}
-.navbar a#active {
-  color: hsl(45, 99%, 50%);
-}
-
-.navbar i:hover {
-  color: hsl(45, 99%, 50%);
-  transition: 0.4s ease-in-out;
-}
-.navbar h1 {
-  font-size: 2.5rem;
-  color: hsl(0, 0%, 21%);
-}
-
-.homePage .item {
-  display: flex;
-  width: 90%;
-  margin: 0 auto;
-  align-items: center;
-  gap: 30px;
-}
-.homePage .item1 {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  width: 40%;
-}
-.homePage .item1 h1 {
-  font-size: 7vw;
-}
-.btn {
-  display: flex;
-  gap: 20px;
-}
-.button {
-  border-radius: 100px;
-  border: none;
-  background-color: hsl(0, 0%, 21%);
-  color: white;
-  font-weight: bold;
-  width: 100%;
-  display: flex;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-}
-.button:hover {
-  background-color: hsl(45, 99%, 50%);
-  transition: 0.4s ease-in-out;
-}
-.homePage .item2 {
-  display: flex;
-  gap: 30px;
-  width: 60%;
-}
-
-.homePage .item2 img {
-  width: 50%;
-} */
 /* contactUsPage */
 .contactUsPage {
   display: flex;
@@ -236,10 +109,9 @@ i {
   text-align: center;
 }
 .contactUsPage h1 {
-  font-size: 3.5vw;
+  font-size: 3rem;
   padding-bottom: 10px;
 }
-
 .input {
   display: flex;
   align-items: center;
@@ -298,7 +170,7 @@ i {
   gap: 30px;
 }
 .servicesPage h1 {
-  font-size: 3.5vw;
+  font-size: 3rem;
   padding-bottom: 10px;
 }
 .services {
@@ -351,7 +223,7 @@ i {
   text-align: center;
 }
 .ourPricingPage h1 {
-  font-size: 4vw;
+  font-size: 3rem;
   color: #fff;
 }
 .ourPricingPage p {
@@ -404,7 +276,7 @@ i {
   text-align: center;
 }
 .blogPage h1 {
-  font-size: 3.5vw;
+  font-size: 3rem;
   padding-bottom: 10px;
 }
 .blogs {
@@ -462,46 +334,50 @@ i {
 /* aboutUs */
 
 .aboutUsPage {
-  padding: 150px 10px;
+  padding: 150px 0;
   background-color: hsl(45, 99%, 50%);
 }
-.ite_m {
+.aboutUsPage .ite_m {
   display: flex;
   align-items: center;
-  width: 95%;
+  width: 90%;
   gap: 70px;
+  position: relative;
 }
 .aboutUsPage .item1 {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  justify-content: space-between;
-}
-.whiteItem {
-  width: 30%;
-  height: 60%;
-  background-color: #fff;
-  position: absolute;
-}
-.item1 img {
+  width: 60%;
   position: relative;
-  left: 20px;
-  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
 }
+
+.white{
+  position: relative;
+  width: 60%;
+}
+.whiteImg{
+position: absolute;
+padding-left:20px;
+width: 100%;
+}
+
 .aboutUsPage .item2 {
   display: flex;
   align-items: flex-start;
-  width: 50%;
+  width: 40%;
   flex-direction: column;
   justify-content: center;
   gap: 30px;
 }
 .aboutUsPage h1,
 .customerPage h1 {
-  font-size: 3.5vw;
+    font-size: 3rem;
+  font-weight: bold;
 }
 .button5 {
-  width: 40%;
+  width: 70%;
 }
 /* customerPage */
 .customerPage {
@@ -534,7 +410,6 @@ i {
   border: 1px solid hsl(0, 0%, 18%);
   border-radius: 10px;
   padding: 30px;
-  /* height: 30vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -686,8 +561,8 @@ footer {
   .navbar {
     padding: 10px 20px;
   }
-  .navlinks {
-    position: fixed;
+   .navlinks {
+    position: absolute;
     right: -100%;
     top: -100%;
     gap: 0;
@@ -695,6 +570,7 @@ footer {
     background-color: hsl(0, 0%, 98%);
     width: 70%;
     transition: 1s;
+    z-index: 1;
   }
 
   .link {
@@ -739,6 +615,9 @@ footer {
   .contactUsPage {
     padding: 70px 10px;
   }
+  .contactUsPage h1 {
+  font-size: 2rem;
+  }
   .form {
     flex-direction: column;
   }
@@ -751,13 +630,21 @@ footer {
   .services {
     flex-direction: column;
   }
+     .servicesPage h1 {
+  font-size: 2rem;
+  }
 
   /* ourPricingPage*/
   .contain {
     flex-direction: column;
   }
+
   .contain .whiteContainer {
     width: 100%;
+  }
+   .ourPricingPage h1 {
+  font-size: 2rem;
+  text-align: center;
   }
 
   /* blogPage*/
@@ -765,32 +652,35 @@ footer {
     flex-direction: column;
     gap: 100px;
   }
-  /* aboutUs */
+   .blogPage h1 {
+  font-size: 2rem;
+  }
+ /* aboutUs */
+  .aboutUsPage .ite_m {
+  flex-direction: column-reverse;
+}
+.aboutUsPage .item1{
+  width: 90%;
 
-  .ite_m {
-    flex-direction: column-reverse;
-    margin: 0 auto;
-    gap: 30px;
+}
+ .aboutUsPage h1 {
+  font-size: 2rem;
   }
-  .aboutUsPage .item1 {
-    width: 100%;
-  }
-  .whiteItem {
-    width: 30%;
-    height: 70px;
-    background-color: #fff;
-    position: absolute;
-  }
-  .aboutUsPage .item2 {
-    width: 100%;
-  }
-  .button5 {
-    width: 70%;
-  }
+.aboutUsPage .item2{
+  width: 90%;
+}
+.button5 {
+  width: 90%;
+}
   /* customerPage */
   .iteM {
     flex-direction: column;
   }
+.customerPage h1 {
+    font-size: 2rem;
+  text-align:center ;
+}
+ 
 
   /* footerLinks */
   .footerLinkItems {

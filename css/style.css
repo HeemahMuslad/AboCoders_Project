@@ -92,7 +92,8 @@ i {
   width: 40%;
 }
 .homePage .item1 h1 {
-  font-size: 7vw;
+  font-size: 5rem;
+  font-weight: bolder;
 }
 .btn {
   display: flex !important;
@@ -122,9 +123,32 @@ i {
   width: 60%;
 }
 
-.homePage .item2 img {
-  width: 50%;
+.homePage .img1, .img2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
 }
+.homePage #img{
+  width: 100%;
+}
+.play{
+  position: absolute;
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 10px;
+  opacity: .7;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: 30;
+}
+@keyframes example {
+  from {opacity: .5;}
+  to {opacity: .3}
+}
+
 
 /* carousel1 */
 .buttons{
@@ -143,7 +167,6 @@ i {
   padding: 0;
   align-self: center;
   width: 80px !important;
-  /* position: relative; */
   height: 80px;
   opacity: 1 !important;
 }
@@ -177,11 +200,12 @@ i {
   background-color: hsl(45, 99%, 50%);
   padding: 70px 0;
   text-align: center;
-  position: relative;
+  /* position: relative; */
 }
 .contactUsPage h1 {
-  font-size: 3.5vw;
-  padding-bottom: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 15px 0;
 }
 
 .input {
@@ -242,7 +266,8 @@ i {
   gap: 30px;
 }
 .servicesPage h1 {
-  font-size: 3.5vw;
+    font-size: 3rem;
+  font-weight: bold;
   padding-bottom: 10px;
 }
 .services {
@@ -295,7 +320,8 @@ i {
   text-align: center;
 }
 .ourPricingPage h1 {
-  font-size: 4vw;
+    font-size: 3rem;
+  font-weight: bold;
   color: #fff;
 }
 .ourPricingPage p {
@@ -347,7 +373,8 @@ i {
   gap: 30px;
 }
 .blogPage h1 {
-  font-size: 3.5vw;
+    font-size: 3rem;
+  font-weight: bold;
   padding-bottom: 10px;
 }
 .blogs {
@@ -405,7 +432,7 @@ i {
 /* aboutUs */
 
 .aboutUsPage {
-  padding: 150px 10px;
+  padding: 150px 0;
   background-color: hsl(45, 99%, 50%);
 }
 .aboutUsPage .ite_m {
@@ -413,20 +440,27 @@ i {
   align-items: center;
   width: 90%;
   gap: 70px;
-}
-.aboutUsPage .item1 {
-  width: 50%;
   position: relative;
 }
-.item1 .whiteItem {
-  padding: 20px;
-  width: 40%;
-  background-color: #fff;
+.aboutUsPage .item1 {
+  width: 60%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
 }
-.whiteItem img {
-  width: 100%;
-  /* position: absolute; */
+
+.white{
+  position: relative;
+  width: 60%;
 }
+.whiteImg{
+position: absolute;
+padding-left:20px;
+width: 100%;
+}
+
 .aboutUsPage .item2 {
   display: flex;
   align-items: flex-start;
@@ -437,10 +471,11 @@ i {
 }
 .aboutUsPage h1,
 .customerPage h1 {
-  font-size: 3.5vw;
+    font-size: 3rem;
+  font-weight: bold;
 }
 .button5 {
-  width: 40%;
+  width: 70%;
 }
 /* customerPage */
 .customerPage {
@@ -617,7 +652,7 @@ footer {
 .icons .ellipse i {
   color: white;
 }
-/* carousel */
+
 
 
 /* mediaQuery */
@@ -627,6 +662,7 @@ footer {
   .hamburger {
     display: block;
     margin-left: 50px;
+    
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -642,7 +678,7 @@ footer {
     padding: 10px 20px;
   }
   .navlinks {
-    position: fixed;
+    position: absolute;
     right: -100%;
     top: -100%;
     gap: 0;
@@ -650,6 +686,7 @@ footer {
     background-color: hsl(0, 0%, 98%);
     width: 70%;
     transition: 1s;
+    z-index: 10;
   }
 
   .link {
@@ -673,7 +710,11 @@ footer {
   .homePage .item {
     flex-direction: column;
     margin: auto;
+    padding-top: 50px;
   }
+  .homePage .item1 h1 {
+  font-size: 4rem;
+}
   .homePage .item1 {
     width: 100%;
   }
@@ -685,6 +726,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: 100px;
   }
 
   .homePage .item2 img {
@@ -700,16 +742,25 @@ footer {
   .button2 {
     width: 50%;
   }
+  .contactUsPage h1 {
+  font-size: 2rem;
+  }
 
   /* servicesPage*/
 
   .services {
     flex-direction: column;
   }
+   .servicesPage h1 {
+  font-size: 2rem;
+  }
 
   /* ourPricingPage*/
   .contain {
     flex-direction: column;
+  }
+   .ourPricingPage h1 {
+  font-size: 2rem;
   }
   .contain .whiteContainer {
     width: 100%;
@@ -720,32 +771,35 @@ footer {
     flex-direction: column;
     gap: 100px;
   }
+   .blogPage h1 {
+  font-size: 2rem;
+  }
   /* aboutUs */
+  .aboutUsPage .ite_m {
+  flex-direction: column-reverse;
+}
+.aboutUsPage .item1{
+  width: 90%;
 
-  /* .ite_m {
-    flex-direction: column-reverse;
-    margin: 0 auto;
-    gap: 30px;
+}
+.button5 {
+  width: 90%;
+}
+ .aboutUsPage h1 {
+  font-size: 2rem;
   }
-  .aboutUsPage .item1 {
-    width: 100%;
-  }
-  .whiteItem {
-    width: 30%;
-    height: 70px;
-    background-color: #fff;
-    position: absolute;
-  }
-  .aboutUsPage .item2 {
-    width: 100%;
-  }
-  .button5 {
-    width: 70%;
-  } */
-  /* customerPage */
+.aboutUsPage .item2{
+  width: 90%;
+}
+/* customerPage */
   .iteM {
     flex-direction: column;
   }
+  .customerPage h1 {
+  font-size: 2rem;
+  text-align: center;
+  }
+ 
 
   /* footerLinks */
   .footerLinkItems {
@@ -754,4 +808,17 @@ footer {
   .footerLinkItem {
     width: 100%;
   }
+  /* carousel1 */
+.buttons{
+  top: -40px;
+  position: relative;
 }
+.buttons2{
+  top: 20px;
+  position: relative;
+
+}
+}
+
+
+

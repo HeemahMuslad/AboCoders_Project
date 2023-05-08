@@ -54,12 +54,12 @@
         </div>
       </div>
       <div
-        id="carouselExampleAutoplaying"
+        id="carouselExampleInterval"
         class="carousel slide"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-bs-interval="1500">
             <div class="item">
               <div class="item1">
                 <h1>
@@ -77,13 +77,20 @@
                 </div>
               </div>
               <div class="item2">
-                <img src="./images/img1.png" alt="" />
+                <div class="img1">
+                <img src="./images/img1.png" alt="" id="img" />
+                <div class="play"><img src="./images/play_icon.png" id="playIcon"  alt=""></div>
+                </div>
 
-                <img src="./images/img2.png" alt="" />
+                <div class="img2"><img src="./images/img2.png" alt="" id="img"/>
+                  <div class="play">
+                  <img src="./images/play_icon.png" id="playIcon" alt=""></div>
+                </div>
+
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="1500">
             <div class="item">
               <div class="item1">
                 <h1>
@@ -100,14 +107,21 @@
                   <a href="#" class="button">READ MORE</a>
                 </div>
               </div>
-              <div class="item2">
-                <img src="./images/img1.png" alt="" />
+                <div class="item2">
+                <div class="img1">
+                <img src="./images/img1.png" alt="" id="img" />
+                <div class="play"><img src="./images/play_icon.png" id="playIcon"  alt=""></div>
+                </div>
 
-                <img src="./images/img2.png" alt="" />
+                <div class="img2"><img src="./images/img2.png" alt="" id="img"/>
+                  <div class="play">
+                  <img src="./images/play_icon.png" id="playIcon" alt=""></div>
+                </div>
+
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="1000">
             <div class="item">
               <div class="item1">
                 <h1>
@@ -124,10 +138,17 @@
                   <a href="#" class="button">READ MORE</a>
                 </div>
               </div>
-              <div class="item2">
-                <img src="./images/img1.png" alt="" />
+               <div class="item2">
+                <div class="img1">
+                <img src="./images/img1.png" alt="" id="img" />
+                <div class="play"><img src="./images/play_icon.png" id="playIcon"  alt=""></div>
+                </div>
 
-                <img src="./images/img2.png" alt="" />
+                <div class="img2"><img src="./images/img2.png" alt="" id="img"/>
+                  <div class="play">
+                  <img src="./images/play_icon.png" id="playIcon" alt=""></div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -138,7 +159,7 @@
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-target="#carouselExampleInterval"
         data-bs-slide="prev"
       >
         <i class="fa-solid fa-angle-left" id="icon-black"></i>
@@ -147,7 +168,7 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-target="#carouselExampleInterval"
         data-bs-slide="next"
       >
         <i class="fa-solid fa-angle-right" id="icon-black"></i>
@@ -347,9 +368,8 @@
     <section class="aboutUsPage">
       <div class="ite_m">
         <div class="item1">
-          <div class="whiteItem">
-            <img src="./images/about_img.jpg" alt="" />
-          </div>
+         <img src="./images/whiteimg.jpeg" alt="" class="white">
+          <img src="./images/about_img.jpg" alt=""  class="whiteImg"/>
         </div>
         <div class="item2">
           <h1>About Our Center</h1>
@@ -369,12 +389,12 @@
     <section class="customerPage">
       <h1>What is Says Customers</h1>
       <div
-        id="carouselExampleAutoplaying"
+        id="carouselExampleInterval2"
         class="carousel slide"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-bs-interval="1500">
             <div class="iteM">
               <div class="itemOne">
                 <img src="./images/test2.png" alt="" />
@@ -393,7 +413,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="1500">
             <div class="iteM">
               <div class="itemOne">
                 <img src="./images/test2.png" alt="" />
@@ -412,7 +432,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="1000">
             <div class="iteM">
               <div class="itemOne">
                 <img src="./images/test2.png" alt="" />
@@ -437,7 +457,7 @@
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-target="#carouselExampleInterval2"
             data-bs-slide="prev"
           >
             <i class="fa-solid fa-angle-left" id="icon-black"></i>
@@ -446,7 +466,7 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-target="#carouselExampleInterval2"
             data-bs-slide="next"
           >
             <i class="fa-solid fa-angle-right" id="icon-black"></i>
